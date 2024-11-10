@@ -1,0 +1,64 @@
+/* General Styles */
+
+.home-section {
+   background-color: #eff3f7;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* a subtle shadow for depth */ 
+
+}
+
+.home-section h1 {
+    text-align: center;
+    padding: 3rem 2rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.home-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+
+
+/* Line Styles */
+.line {
+    display: block;
+    font-weight: 700;
+    align-items: center;
+}
+
+.line.long {
+    font-size: 3rem; /* Larger font for the first line */
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* Slight spacing for effect */
+    margin: 0 auto; /* Center-aligns */
+    margin-top: 5rem;
+}
+
+.line.short {
+    font-size: 3rem; /* Slightly smaller font for the second line */
+    margin-top: 0.5rem; 
+    margin-left: 2rem ;
+    margin-right: 3rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        font-size: 2rem;
+    }
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .line.long {
+        font-size: 1.8rem; /* Scale down for smaller screens */
+    }
+
+    .line.short {
+        font-size: 1.4rem;
+    }
+}
