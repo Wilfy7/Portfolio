@@ -3,7 +3,8 @@ import "./HomeStyles.scss";
 
 const Home = () => {
   return (
-    <div className="home-section">
+    <section>
+      <div className="home-section">
        <h1>
          <span className="line long"> Reliable SOLUTIONS THAT TURN </span> 
          <span className="line short"> IDEAS INTO IMPACTFUL SOFTWARE </span>
@@ -14,11 +15,52 @@ const Home = () => {
          This is a brief introduction about my work as a developer. 
          Feel free to browse through my projects and contact me for collaboration.
       </p>
-     <div>
+     <div className="home-button">
+        <input type="text" placeholder="Book a convo" className="call-input"/>
+       
+        <a  
+         href="https://calendly.com/wilfy7am/book-a-meeting-with-wilfred" 
+         style={{width:"100%", height:"600",}}
+         className="button">Make it happen
+        </a>
 
+        <div className="image-container">
+          <img className="img" src="images/Inov2.webp" alt="Inov image" />
+        </div>
      </div>
-
-    </div>
+     </div>
+     <div className="section-behere">
+        <span>Created for you and your business</span>
+      </div>
+      <div className="section-create">
+        <span>Building Innovative Ideas into Sustainable Solutions</span>
+      </div>
+      <div className="stats-container">
+        <div className="stat-item">
+          <span className="stat-value">200+</span>
+          <span className="stat-label">Completed Projects</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-value">700+</span>
+          <span className="stat-label">Satisfied Customers</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-value">98%</span>
+          <span className="stat-label">Customer Satisfaction</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-value">30M</span>
+          <span className="stat-label">Lines of Code</span>
+        </div>
+      </div>
+      <div className="elev-container">
+          <span className="section-elev">Turning Challenges into Cutting-Edge Solutions</span>
+      </div>
+      <div className="let-container">
+        <span className="let-section">Let us Bring Your Projects to Life Together</span>
+      </div>
+    </section>
+    
   )
 }
 

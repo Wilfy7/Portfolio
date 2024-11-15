@@ -40,6 +40,27 @@
        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
        crossorigin="anonymous">
     </script>
+
+    <!-- Calendly inline widget begin -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script>
+      // Event listener to open Calendly on button click
+      document.getElementById('makeItHappenButton').addEventListener('click', function () {
+        Calendly.initPopupWidget({ url: 'https://calendly.com/wilfy7am/book-a-meeting-with-wilfred' });
+      });
+    </script>
+<!-- Calendly inline widget end -->
+
+<!-- Modal Structure -->
+<div id="calendarModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+
+    <!-- Calendly embed iframe -->
+    <iframe src="https://calendly.com/your-username/meeting" width="100%" height="600" frameborder="0"></iframe>
+  </div>
+</div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

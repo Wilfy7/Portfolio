@@ -5,6 +5,7 @@ import Home from "../Pages/home/Home";
 import AboutMe from "../Pages/aboutMe/AboutMe";
 import Blogs from "../Pages/blogs/Blogs";
 import Projects from "../Pages/projects/Projects";
+import Footer from "../components/footer/Footer";
 
 const Index = () => {
   return (
@@ -23,6 +24,9 @@ const Index = () => {
           <Route path="/aboutme" element={<AboutMe />}  />
         </Routes>
       </BrowserRouter>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
