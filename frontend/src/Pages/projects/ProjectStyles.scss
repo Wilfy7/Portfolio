@@ -1,0 +1,24 @@
+.proj-sec {
+    position: relative;
+    height: 50hv;
+    width: 100vw;
+    
+}
+
+.img-sec {
+    width: 100%;
+    height: 78vh;
+   object-fit: cover;
+}
+
+
+.overlay-text {
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%); /* Center text exactly */ 
+    text-align: center;  
+    color: white; 
+    font-family: Arial, sans-serif;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds readable shadow */ 
+}

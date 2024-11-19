@@ -1,15 +1,26 @@
 .navbar {
+    position: sticky;
     background-color: #e2e6fa;
     border-bottom: 1px solid #f5eeee;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    position: fixed; 
     top: 0;
+    left:0;
     height: 4.5rem; 
     width: 100%; 
-    z-index: 1; 
+    z-index: 1000; 
 }
 
 .pagestext {
     color: rgb(244, 239, 239)
     
 } 
+
+.container-fluid {
+    width: 100%;
+    max-width: 100%; /* Ensure no restrictions */
+    margin: 0;
+    padding: 0;
+  }
+  
+
+

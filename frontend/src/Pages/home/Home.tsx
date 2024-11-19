@@ -24,8 +24,8 @@ const Home = () => {
          className="button">Make it happen
         </a>
 
-        <div className="image-container">
-          <img className="img" src="images/Inov2.webp" alt="Inov image" />
+        <div className="img-container">
+          <img className="img" src="images/Inov2.webp" alt="Inov" />
         </div>
      </div>
      </div>
@@ -58,6 +58,18 @@ const Home = () => {
       </div>
       <div className="let-container">
         <span className="let-section">Let us Bring Your Projects to Life Together</span>
+      </div>
+
+      <div className="img2-container">
+        <div>
+         <img className="img2-items" src="images/Inov2.webp" alt="Inov" />
+        </div> 
+        <div>
+         <img className="img2-items" src="images/Inov2.webp" alt="Inov" />
+        </div>
+        <div>
+         <img className="img2-items" src="images/Inov2.webp" alt="Inov" />
+        </div>
       </div>
     </section>
     
