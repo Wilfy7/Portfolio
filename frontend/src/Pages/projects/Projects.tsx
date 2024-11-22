@@ -11,6 +11,34 @@ const Projects = () => {
           <p>Here you can find all blablabla nbalbalba bahcj ahxdhcbyheyeycyhbcb hdbc</p>
         </div>
       </div>
+
+       {/* card 1 */}
+      <div className="card-grid">
+        <div className="card">
+          <div className="card-image img">
+            <img src="images/Inov.jpeg" alt="Inov" />
+          </div>
+        </div>
+      
+
+      {/* card 2 */}
+      <div className="">
+        <div className="card">
+          <div className="card-image img">
+            <img src="images/Inov.jpeg" alt="Inov" />
+          </div>
+        </div>
+      </div>
+
+      {/* card 3 */}
+      <div className="">
+        <div className="card">
+          <div className="card-image img">
+            <img src="images/Inov.jpeg" alt="Inov" />
+          </div>
+        </div>
+      </div>
+      </div>
       <div></div>
     </section>
   )

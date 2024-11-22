@@ -32,6 +32,7 @@ const AboutMe = () => {
         </div>
       </div>
     </section >
+    
   )
 }
 
