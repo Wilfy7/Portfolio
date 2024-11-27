@@ -6,6 +6,7 @@ import chalk from "chalk";
 import devApp from "./config/index.config";
 import connectDB from "./config/connectDB";
 import blogRouter from "./routes/blogPostRouter";
+import projectDataRouter from "./routes/projectDataRouter";
 
 
 
@@ -20,7 +21,8 @@ app.use(morgan("dev"));
 app.use(cors());
 
 //Routes
-app.use("/api/v1", blogRouter)
+app.use("/api/v1", blogRouter);
+app.use("/api/v1/", projectDataRouter);
 
 app.listen(port, () => {
     console.log(chalk.yellowBright(`Server is running on port http://localhost:${port}`)

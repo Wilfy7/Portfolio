@@ -3,6 +3,7 @@ import * as functions from "firebase-functions"
 import morgan from "morgan";
 import cors from "cors";
 import blogRouter from "./routes/blogPostRouter";
+import projectDataRouter from "./routes/projectDataRouter";
 
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(cors());
 
 //Routes
 app.use("/api/v1", blogRouter );
+app.use("/api/v1", projectDataRouter);
 
 
 app.get("/", (req: express.Request, res: express.Response):any => {

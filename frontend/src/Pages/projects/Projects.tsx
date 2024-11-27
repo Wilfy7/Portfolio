@@ -12,30 +12,63 @@ const Projects = () => {
         </div>
       </div>
 
-       {/* card 1 */}
+       
       <div className="card-grid">
+        {/* card 1 */}
         <div className="card">
-          <div className="card-image img">
+        <div className="card-image">
+          <div className="card-sm">
             <img src="images/Inov.jpeg" alt="Inov" />
+          </div>
+          <div className="card-content">
+            <h3>System Manager</h3>
+            <p>An administration system build to manage employers 
+              by keeping a data of thier performance</p>
+          </div>
+          <div className="tags">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
           </div>
         </div>
       
 
       {/* card 2 */}
-      <div className="">
-        <div className="card">
-          <div className="card-image img">
+      <div className="card">
+        <div className="card-image">
+          <div className="card-sm">
             <img src="images/Inov.jpeg" alt="Inov" />
+          </div>
+          <div className="card-content">
+            <h3>System Manager</h3>
+            <p>An administration system build to manage employers 
+              by keeping a data of thier performance</p>
+          </div>
+          <div className="tags">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
           </div>
         </div>
       </div>
 
       {/* card 3 */}
-      <div className="">
-        <div className="card">
-          <div className="card-image img">
+      <div className="card">
+        <div className="card-image">
+          <div className="card-sm">
             <img src="images/Inov.jpeg" alt="Inov" />
           </div>
+          <div className="card-content">
+            <h3>System Manager</h3>
+            <p>An administration system build to manage employers 
+              by keeping a data of thier performance</p>          
+          </div>
+          <div className="tags">
+        <span>React.js</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+      </div>
         </div>
       </div>
       </div>

@@ -55,11 +55,12 @@ export const getSingleBlogPost = async(req: Request, res: Response) => {
          res.status(400).json({
          message: "Blog post not found"
         })
-       }
+       };
 
         res.status(200).json({
         message: "Blog post fetched successfully"
-       })
+       }); 
+
     } catch (error) {
        res.status(500).json({
         message: "Error fetching blog post"
