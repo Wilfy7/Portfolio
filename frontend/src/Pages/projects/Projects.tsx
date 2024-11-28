@@ -1,7 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ProjectStyles.scss";
+import { baseUrl } from "../../service/project.service";
+import axios from "axios";
+
+
+
+interface Project {
+  title: string;
+  dicription: string;
+  image: string;
+  tags: string
+}
 
 const Projects = () => {
+
+    const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+
+    useEffect(()=> {
+      //Fetch data from API/Backend
+     axios.get(`${baseUrl}/all/projects`)
+      .then(response => {
+        setProjects(response.data.dat);
+        setLoading(false);
+      })
+       .catch (error =>  {
+        console.error(error.message)
+        setLoading(false)
+      
+     });
+
+   
+    }, []);
+    
+
   return (
     <section>
       <div className="proj-sec">
@@ -12,69 +45,37 @@ const Projects = () => {
         </div>
       </div>
 
-       
-      <div className="card-grid">
-        {/* card 1 */}
-        <div className="card">
-        <div className="card-image">
-          <div className="card-sm">
-            <img src="images/Inov.jpeg" alt="Inov" />
-          </div>
-          <div className="card-content">
-            <h3>System Manager</h3>
-            <p>An administration system build to manage employers 
-              by keeping a data of thier performance</p>
-          </div>
-          <div className="tags">
-            <span>React.js</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-          </div>
-          </div>
-        </div>
+
       
-
-      {/* card 2 */}
-      <div className="card">
-        <div className="card-image">
-          <div className="card-sm">
-            <img src="images/Inov.jpeg" alt="Inov" />
+       { loading? (
+       <p>Loading...</p> 
+       ):(
+      <div className="card-grid">
+        {projects.map((project: any) => (
+        <div className="card" key={project.id}>
+          <div className="card-image">
+           <div className="card-sm">
+            <img src={project.image} alt={project.title} />
+           </div>
           </div>
+          
           <div className="card-content">
-            <h3>System Manager</h3>
-            <p>An administration system build to manage employers 
-              by keeping a data of thier performance</p>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
           </div>
+      
           <div className="tags">
-            <span>React.js</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
+            {project.tags.map((tag:any, index:any) =>(
+              <span key={index}>{tag}</span>
+            ))}
           </div>
-        </div>
-      </div>
-
-      {/* card 3 */}
-      <div className="card">
-        <div className="card-image">
-          <div className="card-sm">
-            <img src="images/Inov.jpeg" alt="Inov" />
           </div>
-          <div className="card-content">
-            <h3>System Manager</h3>
-            <p>An administration system build to manage employers 
-              by keeping a data of thier performance</p>          
-          </div>
-          <div className="tags">
-        <span>React.js</span>
-        <span>Node.js</span>
-        <span>MongoDB</span>
+        
+      ))}
       </div>
-        </div>
-      </div>
-      </div>
-      <div></div>
+       )}
     </section>
-  )
-}
+  );
+};
 
 export default Projects;
