@@ -8,12 +8,12 @@ import projectData from "../models/projectData.model";
 //Create A project
 export const createProject = async (req: Request, res: Response) => {
    try {
-      const {title, image, discription, tags} = req.body;
+      const {title, image, description, tags} = req.body;
 
       const newProject = new projectData({
         title,
         image,
-        discription,
+        description,
         tags
       });
 
@@ -84,11 +84,11 @@ export const updateProject = async(req:Request, res: Response) => {
     try {
         
         const {id} = req.params;
-        const {title, image, discription, tags} = req.body;
+        const {title, image, description, tags} = req.body;
 
         const updatedProject = await projectData.findByIdAndUpdate(
             id,
-            {title, image, discription, tags},
+            {title, image, description, tags},
             {new: true}
         );
 

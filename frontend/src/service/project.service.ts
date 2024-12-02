@@ -1,12 +1,15 @@
 import axios from "axios";
 
-export const baseUrl = process.env.REACT_APP_APPI;
+export const baseUrl = process.env.REACT_APP_API;
+console.log(baseUrl)
 
 //Retrieve the data from the local storage
 const projectData:any = localStorage.getItem("Portfolio");
 
 //Convert the data into json and parse it
 export const project = JSON.parse(projectData)
+
+
 
 export const createProjectData = async(project:any) => {
    try {
@@ -18,10 +21,10 @@ export const createProjectData = async(project:any) => {
    }
 };
 
-export const getAllProjects = async(project:any) => {
+export const getAllProjects = async() => {
   try {
-     const res = await axios.get(`${baseUrl}/all/projects/`, project)
-     return res.data
+     const res = await axios.get(`${baseUrl}/all/projects`)
+     return res.data.Projects
   } catch (error) {
     console.log(error)
   }

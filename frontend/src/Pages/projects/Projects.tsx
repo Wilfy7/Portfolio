@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ProjectStyles.scss";
-import { baseUrl } from "../../service/project.service";
-import axios from "axios";
+import { getAllProjects } from "../../service/project.service";
 
 
 
@@ -9,32 +8,26 @@ interface Project {
   title: string;
   dicription: string;
   image: string;
-  tags: string
+  tags: string[]
 }
 
-const Projects = () => {
+const Project = () => {
+  const colors = ["#007bff", "#28a745", "#ffc107", "#dc3545", "#6f42c1"]; // Add more colors if needed
 
-    const [projects, setProjects] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [projectData, setProjectData] = useState([]);
 
-
+    const fetchData = async() => {
+      const res = await getAllProjects()
+      setProjectData(res)
+    }
+    
     useEffect(()=> {
       //Fetch data from API/Backend
-     axios.get(`${baseUrl}/all/projects`)
-      .then(response => {
-        setProjects(response.data.dat);
-        setLoading(false);
-      })
-       .catch (error =>  {
-        console.error(error.message)
-        setLoading(false)
-      
-     });
-
+      fetchData();
    
     }, []);
-    
 
+console.log(projectData)
   return (
     <section>
       <div className="proj-sec">
@@ -44,38 +37,41 @@ const Projects = () => {
           <p>Here you can find all blablabla nbalbalba bahcj ahxdhcbyheyeycyhbcb hdbc</p>
         </div>
       </div>
-
-
-      
-       { loading? (
-       <p>Loading...</p> 
-       ):(
-      <div className="card-grid">
-        {projects.map((project: any) => (
-        <div className="card" key={project.id}>
-          <div className="card-image">
-           <div className="card-sm">
-            <img src={project.image} alt={project.title} />
-           </div>
+       
+      <section className="projects-section">
+        <div className="projects-container">
+        {projectData?.length > 0 ? (
+        projectData?.map((project: any, i ) => (
+        <div className="project-card" key={project?.id}>
+          <div className="mockup-container shape">
+            <img src={project?.image} alt={project?.title} className="mockup-image"/>
           </div>
           
-          <div className="card-content">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          </div>
+          <div className="project-info">
+            <h3 className="project-title">{project?.title}</h3>
+            <p className="project-description">{project?.description}</p> 
+          
       
-          <div className="tags">
-            {project.tags.map((tag:any, index:any) =>(
-              <span key={index}>{tag}</span>
-            ))}
-          </div>
-          </div>
+      <div className="tags-container">
+        {project.tags.map((tag:any, i:any) => (
+          <span  
+          key={i} className="tag">{tag}</span>
+        ))}
         
-      ))}
       </div>
-       )}
+      <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="project-demo">
+                Live Demo →
+     </a>
+      </div>
+      </div>
+        ))
+      ):(
+        <p>No projects available</p>
+        )}
+        </div>
+      </section>
     </section>
   );
 };
 
-export default Projects;
+export default Project;
