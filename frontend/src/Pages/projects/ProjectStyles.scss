@@ -1,8 +1,7 @@
 .proj-sec {
     position: relative;
     height: 50hv;
-    width: 100vw;
-    
+    width: 100vw;  
 }
 
 .img-sec {
@@ -28,41 +27,39 @@
   display: flex;
   justify-content: center;
   padding: 3rem 1rem;
-  background-color: #f9f9f9;
 }
 
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 2rem; /* Space between cards */
+  gap: 4rem; /* Space between cards */
   max-width: 1200px; /* Limit total width */
-  width: 100%;
+  width: 110%;
 }
 
 .project-card {
+  display: block;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
   text-align: left;
+  width: 112%;
 }
 
-.sm-card {
-  background-color: #666;
-  border-radius: 12px;
-  width: 92%;
-  
-}
+
 
 .mockup-container {
+  display: block;
   width: 90%;
   aspect-ratio: 3 / 4; /* Ensure consistent aspect ratio for images */ 
   overflow: hidden;
   border-bottom: 1px solid #eaeaea;
-  padding: 2rem 2rem 4rem 2rem;
   margin-bottom: 2rem;
-  border: 15px solid #000;
+  background-color: #666;
+  justify-content: center;
+  margin-left: 1.2rem;
 
 
   .mockup-image {
@@ -76,9 +73,10 @@
   height: auto;
   border: 15px solid #000;
   align-self: auto;
-  margin: 1rem 2rem 2.5rem 1rem;
+  margin: 1.5rem 3rem 1rem 1.1rem;
   border-radius: 10px;
 }
+
 
 .project-info {
   padding-left: 1.5rem ;
@@ -113,7 +111,6 @@
   display: inline-block; 
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
 }
-
 
 
 .project-demo {

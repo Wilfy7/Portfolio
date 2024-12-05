@@ -1,16 +1,14 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "lib",
-    "sourceMap": true,
+    "target": "ES2020", // Supports modern JavaScript features
+    "module": "commonjs", // Required for Node.js
+    "lib": ["ES2020", "DOM"],
     "strict": true,
-    "target": "es2017",
-    "esModuleInterop": true
+    "esModuleInterop": true, // For compatibility with CommonJS/ES modules
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true, // Speeds up build by skipping library checks
+    "outDir": "./lib" // Where compiled JavaScript files go
   },
-  "compileOnSave": true,
-  "include": [
-    "src"
-  ] 
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "../components/layout/Navbar";
 import Home from "../Pages/home/Home";
 import AboutMe from "../Pages/aboutMe/AboutMe";
@@ -10,7 +10,7 @@ import Footer from "../components/footer/Footer";
 const Index = () => {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
       <nav>
         <Navbar />
       </nav>
@@ -22,8 +22,10 @@ const Index = () => {
           <Route path="/blogs" element={<Blogs />} />
 
           <Route path="/aboutme" element={<AboutMe />}  />
+
+          <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
       <footer>
         <Footer />
       </footer>
