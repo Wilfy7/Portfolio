@@ -43,8 +43,10 @@ console.log(projectData)
         {projectData?.length > 0 ? (
         projectData?.map((project: any, i ) => (
         <div className="project-card" key={project?.id}>
+          <div className="semi-card">
           <div className="mockup-container shape">
             <img src={project?.image} alt={project?.title} className="mockup-image"/>
+          </div>
           </div>
           
           <div className="project-info">

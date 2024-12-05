@@ -39,13 +39,22 @@
 
 .project-card {
   display: block;
-  background-color: #ffffff;
+  background-color: #f0f0f5 ;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
   text-align: left;
   width: 112%;
+
+  .semi-card {
+    display: block;
+    background-color: #e2e2ed;
+    height: 61%;
+    width: 91%;
+    justify-self: center;
+    border-radius: 12px;
+  }
 }
 
 
