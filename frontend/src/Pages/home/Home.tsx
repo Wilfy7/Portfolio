@@ -16,7 +16,7 @@ const Home = () => {
          Feel free to browse through my projects and contact me for collaboration.
       </p>
      <div className="home-button">
-        <input type="text" placeholder="Book a convo" className="call-input"/>
+        <input type="text" placeholder="Book a free call" className="call-input"/>
        
         <a  
          href="https://calendly.com/wilfy7am/book-a-meeting-with-wilfred" 

@@ -39,12 +39,12 @@ console.log(projectData)
       </div>
        
       <section className="projects-section">
-        <div className="projects-container">
-        {projectData?.length > 0 ? (
-        projectData?.map((project: any, i ) => (
-        <div className="project-card" key={project?.id}>
-          <div className="semi-card">
-          <div className="mockup-container shape">
+       <div className="projects-container">
+          {projectData?.length > 0 ? (
+          projectData?.map((project: any, i ) => (
+         <div className="project-card" key={project?.id}>
+         <div className="semi-card">
+         <div className="mockup-container shape">
             <img src={project?.image} alt={project?.title} className="mockup-image"/>
           </div>
           </div>
@@ -54,23 +54,25 @@ console.log(projectData)
             <p className="project-description">{project?.description}</p> 
           
       
-      <div className="tags-container">
-        {project.tags.map((tag:any, i:any) => (
-          <span  
-          key={i} className="tag">{tag}</span>
-        ))}
+          <div className="tags-container">
+             {project.tags?.map((tag:any, i: number) =>(
+             <span key={i}className="tag">{tag}</span>
+         
+            ))}
+
+      
         
-      </div>
-      <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="project-demo">
+          </div>
+            <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="project-demo">
                 Live Demo →
-     </a>
-      </div>
-      </div>
-        ))
-      ):(
-        <p>No projects available</p>
-        )}
+            </a>
         </div>
+       </div>
+          ))
+         ):(
+          <p>No projects available</p>
+          )}
+      </div>
       </section>
     </section>
   );

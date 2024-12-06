@@ -10,6 +10,12 @@ export const createProject = async (req: Request, res: Response) => {
    try {
       const {title, image, description, tags} = req.body;
 
+      if(!title || !image || !description || !tags) {
+        res.status(400).json({
+            message: "All fields required"
+        })
+      }
+
       const newProject = new projectData({
         title,
         image,
