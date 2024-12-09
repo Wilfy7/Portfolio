@@ -74,6 +74,18 @@ console.log(projectData)
           )}
       </div>
       </section>
+
+      <div className="ready">
+        <h1 className="ready-h1">Excited to Bring Your Vision to Life.</h1>
+        <p 
+          className="text"> 
+          Reach out today to explore how my tailored solutions can transform your business
+          and drive it to new heights. Let’s create something extraordinary together! 
+        </p>
+        <button className="ready-button">
+          Let's Talk
+        </button>
+      </div>
     </section>
   );
 };
