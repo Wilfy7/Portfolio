@@ -238,6 +238,37 @@
 
   }
 
+  .attributes-section {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+     margin: 6rem 0rem 4rem 4rem;
+  }
+
+  .attribute-header {
+    justify-content: center;
+    margin: 0rem 0rem 1rem 1rem;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .attribute-items {
+    margin: 0rem 2rem 4rem -2rem;
+    text-align: center;
+  }
+
+  .span-txt{
+    color: #444445;
+  }
+
+  .fi {
+    width: 20px;
+    height: 22px;
+    fill: #000;
+    margin: 0rem 0rem 0.7rem 1.5rem;
+  
+}
+
   .img2-container {
     display: flex;
     align-items: center;
