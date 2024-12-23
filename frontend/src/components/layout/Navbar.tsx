@@ -33,6 +33,11 @@ const Navbar = () => {
           <NavLink className="nav-link pagestext" to="/aboutme">About Me</NavLink>
          </li>
          </ul>
+          <div className="let-talk">
+            <button className="ready-button">
+              Let's Talk
+            </button>
+          </div>
         </div>
       
      </div>
