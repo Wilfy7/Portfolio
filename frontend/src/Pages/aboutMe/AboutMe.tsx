@@ -58,7 +58,7 @@ const AboutMe = () => {
           With years of experience, I've mastered a wide range of cutting-edge technologies and tools, enabling me to create efficient, high-performance applications that exceed expectations. Here's how my expertise can power your success.
           </p>
         </div>
-    </section>
+    </section> 
     
   )
 }
