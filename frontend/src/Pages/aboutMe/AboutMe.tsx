@@ -60,7 +60,7 @@ const AboutMe = () => {
         </div>
     </section> 
     
-  )
+  ) 
 }
 
 export default AboutMe;
