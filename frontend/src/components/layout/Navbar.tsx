@@ -15,7 +15,7 @@ const Navbar = () => {
             textDecoration: "none"
           }}
         to="/"> 
-          CodeAlchemy
+          CodeAlkemy
         </NavLink>
 
         <div style={{paddingLeft:"25rem"}} className="collapse navbar-collapse" id="navbarSupportedContent">
