@@ -27,7 +27,7 @@ const Project = () => {
    
     }, []);
 
-console.log(projectData)
+console.log(projectData) 
   return (
     <section>
       <div className="proj-sec">
