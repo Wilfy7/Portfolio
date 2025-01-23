@@ -24,7 +24,43 @@
   
   .let-talk {
     transform: translate(-50%);
+    font-size: none; 
+    text-align: auto;
     
   }
 
 
+
+
+  @media (max-width: 768px) {
+    .navbar {
+      position: sticky;
+      background-color: #f0f0f5;
+      height: 4rem; /* Adjust height for mobile */
+      box-shadow: none; /* Simplify for mobile if needed */
+      top: 0;
+      left:0;
+      width: 100%; 
+      z-index: 1000; 
+    }
+  
+    .pagestext {
+      color: rgb(244, 239, 239); /* Keep same color */
+    }
+  
+    .container-fluid {
+      max-width: 100%; /* Ensure full width */
+      width: 100%;
+      padding: 0 0.5rem; /* Add padding for better spacing */
+      margin: 0;
+      padding: 0;
+    }
+  
+    .let-talk {
+      transform: translate(-50%);
+      font-size: 0.8rem; /* Adjust font size */
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  }
+  
+  
