@@ -274,6 +274,7 @@
     height: 22px;
     fill: #000;
     margin: 0rem 0rem 0.7rem 1.5rem;
+    justify-content: center;
 }
 
 .img2-container {
@@ -332,7 +333,7 @@
   font-size: 2rem;
   font-weight: bold;
   color: #121212; 
-  z-index: 10; 
+  z-index: 12; 
   text-align: center;
   padding: 1rem 0.5rem ; 
 }
@@ -353,11 +354,22 @@
 }
 
 
+/* Media Responsive for Ipad*/
+@media (max-width: 1024){
+  .section-behere {
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 16rem;
+    font-size: large;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: #726767
+  }
+  
+}
 /* Responsive Adjustments */
 /* Styles for mobile screens */
 @media (max-width: 768px) {
-
-  
   
   .home-section {
     background-color: #eff3f7;
@@ -548,8 +560,8 @@
   border-radius: 5px;        
   padding: 25px;
   box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  width: 87%;
-  margin-left: 2rem;
+  width: 100%;
+  margin-left: 0rem;
   align-content: center;
 }
 
