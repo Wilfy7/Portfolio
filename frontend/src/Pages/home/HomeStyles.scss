@@ -66,7 +66,7 @@
     border: 1px solid #ddd;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    width: 42%;
+    width: 65%;
     height: 3.5rem;
     font-size: 1rem;
     margin-right: 1rem;
@@ -74,17 +74,17 @@
 }
 
 .button {
-    padding: 1.1rem 2rem;
+    padding: 1rem 1.1rem;
     background-color: #0073e6;
     color: #fff;
+    width: auto;
+    max-width: 150px;
     border: none;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     height: 3.5rem;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1rem;
-    flex-shrink: 1;
     transition: background-color 0.3s ease;
   }
   
@@ -223,7 +223,7 @@
   .elev-container{
     padding-top: 95px;
     display: flex;
-    margin-left: 30rem;
+    justify-content: center;
   }
 
   .section-elev {
@@ -233,9 +233,10 @@
   }
 
   .let-container {
-    margin: 0.7rem 20.5rem;
+    margin: 0.7rem 0rem;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .let-section {
@@ -356,10 +357,7 @@
 /* Styles for mobile screens */
 @media (max-width: 768px) {
 
-  * {
-    overflow: hidden;
-  overflow-y: scroll;
-  }
+  
   
   .home-section {
     background-color: #eff3f7;
@@ -419,7 +417,7 @@
   border: 1px solid #ddd;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  width: 57%;
+  width: 70%;
   height: 3.5rem;
   font-size: 1rem;
   margin-right: 1rem;
@@ -427,18 +425,18 @@
 }
 
 .button {
-  padding: 1.1rem 2rem;
+  padding: 1.2rem 0.8rem;
   background-color: #0073e6;
   color: #fff;
   border: none;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 3.5rem;
-  width: 20%;
+  max-width: 100px;
+  width: auto;
   font-weight: bold;
   text-decoration: none;
-  flex-shrink: 1;
-  font-size: 1rem;
+  font-size: 0.8rem;
   transition: background-color 0.3s ease;
 }
 
@@ -517,7 +515,7 @@
 .section-behere {
   align-items: center;
   justify-content: center;
-  margin: 2rem 5rem;
+  margin: 2rem 6rem;
   font-size: large;
   font-family: Arial, sans-serif;
   font-weight: 700;
@@ -527,7 +525,7 @@
 .section-create {
   align-items: center;
   justify-content: center;
-  margin: 0.5rem 4.5rem;
+  margin: 0.5rem 3rem;
   display: inline-block;
   font-size: xx-large;
   font-family: Arial, sans-serif;
@@ -551,7 +549,7 @@
   padding: 25px;
   box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   width: 87%;
-  margin-left: 4rem;
+  margin-left: 2rem;
   align-content: center;
 }
 
@@ -562,22 +560,22 @@
 }
 
 .stat-value {
-  font-size: 28px;
-  font-weight: 750;
+  font-size: 25px;
+  font-weight: 700;
   color: #1a1a1a; /* Dark text color */
   display: block;
 }
 
 .stat-label {
-  font-size: 18px;
+  font-size: 16px;
   color: #6c757d; /* Subtle grey color */
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .elev-container{
   padding-top: 95px;
   display: flex;
-  margin-left: 30rem;
+  justify-content: center;
 }
 
 .section-elev {
@@ -587,35 +585,38 @@
 }
 
 .let-container {
-  margin: 0.7rem 20.5rem;
+  margin: 0.7rem 0rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .let-section {
   font-weight: 530;
-  font-size: xx-large;
+  font-size: 26px;
   font-family: Arial, sans-serif;
 
 }
 
 .attributes-section {
    display: grid;
-   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-   margin: 6rem 0rem 1.5rem 4rem;
+   grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+   margin: 4rem 0.4rem 1.5rem 3rem;
+   padding-left: 0.3rem;
 }
 
 .attribute-header {
   justify-content: center;
-  margin: 0rem 0rem 1rem 1rem;
+  margin: 0rem 0rem 0.5rem 1rem;
   font-weight: bold;
   font-size: 17px;
   text-align: center;
 }
 
 .attribute-items {
-  margin: 0rem 2rem 4rem -2rem;
+  margin: 0rem 2rem 2rem -2rem;
   text-align: center;
+  justify-content: center;
 }
 
 .span-txt{

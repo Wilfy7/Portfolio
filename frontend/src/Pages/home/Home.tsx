@@ -57,7 +57,7 @@ const Home = () => {
           <span className="section-elev">Turning Challenges into Cutting-Edge Solutions</span>
       </div>
       <div className="let-container">
-        <span className="let-section">Let us Bring Your Projects to Life Together</span>
+        <span className="let-section">Let us Bring Your Projects to Life </span>
       </div>
 
 
@@ -68,7 +68,7 @@ const Home = () => {
          </svg>          
            <h5 className="attribute-header">Dynamic Solutions</h5>
           <span className="span-txt">
-            Creatingh hshsdjsbjksdjbbhbfdb  ns xbs  sc sb  <br />cbs cs
+            Creatingh hshsdjsbjksd <br />jbbhbfdb  ns xbs  sc sb  <br />cbs cs
             hdjnwd hwndu3nu3fbu3  
           </span>
          </div>
@@ -79,7 +79,7 @@ const Home = () => {
          </svg>         
            <h5 className="attribute-header">Dynamic Solutions</h5>
           <span className="span-txt">
-            Creatingh hshsdjsbjksdjbbhbfdb  ns xbs  sc sb  <br />cbs cs
+            Creatingh hshsdjsbjksd <br />jbbhbfdb  ns xbs  sc sb  <br />cbs cs
             hdjnwd hwndu3nu3fbu3  
           </span>
          </div>
@@ -97,7 +97,7 @@ const Home = () => {
          </svg>          
            <h5 className="attribute-header">Dynamic Solutions</h5>
           <span className="span-txt">
-            Creatingh hshsdjsbjksdjbbhbfdb  ns xbs  sc sb  <br />cbs cs
+            Creatingh hshsdjsbjksd <br />jbbhbfdb  ns xbs  sc sb  <br />cbs cs
             hdjnwd hwndu3nu3fbu3  
           </span>
          </div>
@@ -119,7 +119,7 @@ const Home = () => {
           </svg>        
            <h5 className="attribute-header">Dynamic Solutions</h5>
           <span className="span-txt">
-            Creatingh hshsdjsbjksdjbbhbfdb  ns xbs  sc sb  <br />cbs cs
+            Creatingh hshsdjsbjksd <br />jbbhbfdb  ns xbs  sc sb  <br />cbs cs
             hdjnwd hwndu3nu3fbu3  
           </span>
          </div>
@@ -140,7 +140,7 @@ const Home = () => {
           </svg>         
            <h5 className="attribute-header">Dynamic Solutions</h5>
           <span className="span-txt">
-            Creatingh hshsdjsbjksdjbbhbfdb  ns xbs  sc sb  <br />cbs cs
+            Creatingh hshsdjsbjksd <br />jbbhbfdb  ns xbs  sc sb  <br />cbs cs
             hdjnwd hwndu3nu3fbu3  
           </span>
          </div>
@@ -153,7 +153,7 @@ const Home = () => {
           </svg>         
            <h5 className="attribute-header">Dynamic Solutions</h5>
           <span className="span-txt">
-            Creatingh hshsdjsbjksdjbbhbfdb  ns xbs  sc sb  <br />cbs cs
+            Creatingh hshsdjsbjksd <br />jbbhbfdb  ns xbs  sc sb  <br />cbs cs
             hdjnwd hwndu3nu3fbu3  
           </span>
         </div>

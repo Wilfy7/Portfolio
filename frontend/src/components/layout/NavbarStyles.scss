@@ -1,6 +1,6 @@
 .navbar {
     position: sticky;
-    background-color: #f0f0f5;
+    background-color: #fdfdfd;
     border-bottom: 1px solid #f0f0f5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     top: 0;
@@ -23,9 +23,9 @@
   }
   
   .let-talk {
-    transform: translate(-50%);
-    font-size: none; 
-    text-align: auto;
+    transform: translate(-15%);
+    font-size: 16px; 
+    text-align: center;
     
   }
 
@@ -58,7 +58,7 @@
   
     .let-talk {
       transform: translate(-50%);
-      font-size: 0.8rem; /* Adjust font size */
+      font-size: 16px; /* Adjust font size */
       text-align: center; /* Center-align text for smaller screens */
     }
   }
