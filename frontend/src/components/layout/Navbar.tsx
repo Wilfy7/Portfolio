@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
   return (
-  <nav className="globalstyles navbar navbar-expand-lg ">
+  <nav className="globalstyles navbar navbar-expand-lg fixed-top">
      <div className="container-fluid">
         <NavLink 
          style={{

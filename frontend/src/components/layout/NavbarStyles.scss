@@ -30,14 +30,17 @@
   }
 
 
-
+@media (min-width: 1024px) {
+  
+}
 
   @media (max-width: 768px) {
     .navbar {
       position: sticky;
-      background-color: #f0f0f5;
+      background-color: #fdfdfd;
+      border-bottom: 1px solid #f0f0f5;
       height: 4rem; /* Adjust height for mobile */
-      box-shadow: none; /* Simplify for mobile if needed */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       top: 0;
       left:0;
       width: 100%; 
@@ -57,7 +60,7 @@
     }
   
     .let-talk {
-      transform: translate(-50%);
+      transform: translate(-80%);
       font-size: 16px; /* Adjust font size */
       text-align: center; /* Center-align text for smaller screens */
     }

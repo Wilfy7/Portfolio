@@ -6,6 +6,7 @@ import AboutMe from "../Pages/aboutMe/AboutMe";
 import Blogs from "../Pages/blogs/Blogs";
 import Projects from "../Pages/projects/Projects";
 import Footer from "../components/footer/Footer";
+import MobileNav from "../components/layout/MobileNav";
 
 const Index = () => {
   return (
@@ -13,6 +14,9 @@ const Index = () => {
       <Router>
       <nav>
         <Navbar />
+      </nav>
+      <nav>
+        <MobileNav />
       </nav>
         <Routes>
           <Route path="/" element={<Home />} />
