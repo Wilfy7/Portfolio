@@ -674,6 +674,7 @@ height: 88%;
 object-fit: cover; 
 border-radius: 15px; 
 border: #696767 solid 1px ;
+
 }
 
 .img2-txt {
@@ -706,11 +707,18 @@ padding: 1rem 0.5rem ;
  top: 28rem;
  padding-top: 1rem;
  text-align: center;
- text-wrap: wrap;
+}
+.item {
+  flex: 1 1 30%; /* Adjust width to prevent overlap */
+  min-width: 250px; /* Ensures responsiveness */
+  padding: 10px;
+  text-align: center;
 }
 .caption-h{
 font-size: large;
 font-weight: bold;
+max-width: 200px;  /* Adjust to fit two lines */
+
 }
 .img-pp {
  color: #706e6e;

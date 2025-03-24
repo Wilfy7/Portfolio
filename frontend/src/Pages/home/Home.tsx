@@ -165,25 +165,19 @@ const Home = () => {
               <h3 className="h3-txt">Discover My Unique Product Categories</h3>
         <div className="img-container2">
          <img className="img2-items" src="images/Inov2.webp" alt="Inov" />
-         <div className="img-caption">
+         <div className="img-caption item">
           <h5 className="caption-h">Innovative SaaS Solutions</h5>
           <p className="img-pp">Streamlined and Efficient</p>
          </div>
         </div> 
         <div className="img-container2">
          <img className="img2-items" src="images/Inov2.webp" alt="Inov" />
-         <div className="img-caption">
+         <div className="img-caption item">
           <h5 className="caption-h">Expert Development Service</h5>
           <p className="img-pp">Tailored for Success</p>
          </div>
         </div>
-        <div className="img-container2">
-         <img className="img2-items" src="images/cloud.jpg" alt="cloud" />
-         <div className="img-caption">
-          <h5 className="caption-h">Advanced Cloud Infrastructure</h5>
-          <p className="img-pp">Scalable and Secure</p>
-         </div>
-        </div>
+        
       </div>
     </section>
     

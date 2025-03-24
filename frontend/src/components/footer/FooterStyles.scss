@@ -23,3 +23,62 @@
     font-size: 16px;
     margin: 0;
 }
+
+/* Media Responsive for Ipad*/
+@media (max-width: 1024){
+    .footer-starter {
+        display: flex;
+        background-color: #f0f0f5;
+        margin-Top: 3rem;
+    }
+    
+    .section-items {
+        text-align: left;
+        flex: 1;
+        padding: 0.5rem 1rem;
+        min-width: 200px;
+    }
+    
+    .headers {
+        margin-bottom: 0.5rem;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 3.5rem 0 0.8rem 1.5rem;
+    
+    }
+    
+    .section-text {
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+
+//Mobile phone
+@media (max-width: 768px) {
+    .footer-starter {
+        display: flex;
+        background-color: #f0f0f5;
+        margin-Top: 3rem;
+    }
+    
+    .section-items {
+        text-align: left;
+        flex: 1;
+        padding: 0.5rem 1rem;
+        min-width: 200px;
+    }
+    
+    .headers {
+        margin-bottom: 0.5rem;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 3.5rem 0 0.8rem 1.5rem;
+    
+    }
+    
+    .section-text {
+        font-size: 16px;
+        margin: 0;
+    }
+}
