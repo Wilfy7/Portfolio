@@ -377,7 +377,6 @@
     text-align: auto;
     padding: 0rem 1.1rem
  }
-
   .home-section h1 {
     text-align: center;
     padding: 5rem 1rem 0.5rem;
@@ -429,7 +428,7 @@
   border: 1px solid #ddd;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  width: 60%;
+  width: 70%;
   height: 3.5rem;
   font-size: 1rem;
   margin-right: 1rem;
@@ -437,13 +436,15 @@
 }
 
 .button {
-  padding: 1.2rem 0.65rem;
+  padding: 1.2rem 0.8rem;
   background-color: #0073e6;
   color: #fff;
   border: none;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   height: 3.5rem;
+  max-width: 100px;
+  width: auto;
   font-weight: bold;
   text-decoration: none;
   font-size: 0.8rem;
@@ -642,6 +643,7 @@
 
 .img2-container {
 position: relative;
+display: flex;
 gap: 1rem; 
 justify-content: center; 
 align-items: center; 
@@ -662,6 +664,7 @@ justify-content: center;
 align-items: center;
 margin: 11rem 0rem 7rem 0rem;
 padding-bottom: 4.5rem;
+
 }
 
 .img2-items {
@@ -670,6 +673,7 @@ height: 88%;
 object-fit: cover; 
 border-radius: 15px; 
 border: #696767 solid 1px ;
+
 }
 
 .img2-txt {
