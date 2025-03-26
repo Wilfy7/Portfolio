@@ -20,7 +20,7 @@ const Home = () => {
        
         <a  
          href="https://calendly.com/wilfy7am/book-a-meeting-with-wilfred" 
-         style={{width:"100%", height:"600",}}
+         style={{width:"100%", height:"600px",}}
          className="button">Make it happen
         </a>
 
@@ -160,7 +160,7 @@ const Home = () => {
        </div>
       
       
-      <div className="img2-container">
+      <div className="img2-container fixed-mid">
             <p className="img2-txt">Transforming Your Business with Innovative Technology Solutions</p>
               <h3 className="h3-txt">Discover My Unique Product Categories</h3>
         <div className="img-container2">
