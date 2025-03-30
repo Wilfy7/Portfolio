@@ -15,7 +15,9 @@ const Home = () => {
          This is a brief introduction about my work as a developer. 
          Feel free to browse through my projects and contact me for collaboration.
       </p>
-     <div className="home-button">
+      <div className="">
+       <div className="home-button">
+        <div className="">
         <input type="text" placeholder="Book a free call" className="call-input"/>
        
         <a  
@@ -23,10 +25,11 @@ const Home = () => {
          style={{width:"100%", height:"600px",}}
          className="button">Make it happen
         </a>
-
+      </div>   
         <div className="img-container">
           <img className="img" src="images/Inov2.webp" alt="Inov" />
         </div>
+     </div>
      </div>
      </div>
      <div className="section-behere">

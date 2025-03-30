@@ -96,7 +96,7 @@
   /* Style the modal background */
  .modal {
     display: none; /* Hidden by default */
-    position: relative;
+    position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
@@ -376,6 +376,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     text-align: auto;
     padding: 0rem 1.1rem
+ 
  }
   .home-section h1 {
     text-align: center;
@@ -424,7 +425,7 @@
 }
 
 .call-input {
-  padding: 0.9rem 1.1rem;
+  padding: 0.9rem 1.3rem;
   border: 1px solid #ddd;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -436,7 +437,7 @@
 }
 
 .button {
-  padding: 1.2rem 0.6rem;
+  padding: 1.2rem 0.2rem;
   background-color: #0073e6;
   color: #fff;
   border: none;
@@ -444,7 +445,7 @@
   border-bottom-right-radius: 30px;
   height: 3.5rem;
   max-width: 100px;
-  width: auto;
+  width: 10%;
   font-weight: bold;
   text-decoration: none;
   font-size: 0.8rem;
@@ -642,14 +643,13 @@
 }
 
 .img2-container {
-position: relative;
-display: flex;
+position: normal;
 gap: 1rem; 
 justify-content: center; 
 align-items: center; 
 margin: 0 auto; 
 width: 100%; 
-height: 37rem; 
+height: 38rem; 
 background-color: #eff3f7;
 padding: 1rem; 
 box-sizing: border-box; 
@@ -669,7 +669,7 @@ padding-bottom: 4.5rem;
 
 .img2-items {
 width: 100%; 
-height: 88%; 
+height: 80%; 
 object-fit: cover; 
 border-radius: 15px; 
 border: #696767 solid 1px ;
@@ -686,7 +686,7 @@ font-weight: bold;
 color: #706e6e; /* Text color */
 z-index: 10; /* Ensures the text appears above the images */
 text-align: center;
-padding: 1rem 0.5rem; /* Padding for better readability */
+padding: 0.1rem 0rem; /* Padding for better readability */
 }
 
 .h3-txt {
@@ -699,13 +699,14 @@ font-weight: bold;
 color: #121212; 
 z-index: 10; 
 text-align: center;
-padding: 1rem 0.5rem ; 
+padding: 0.8rem ; 
 }
 
 .img-caption {
  top: 28rem;
  padding-top: 1rem;
  text-align: center;
+ min-height: 2rem;
 }
 .item {
   flex: 1 1 30%; /* Adjust width to prevent overlap */
@@ -716,7 +717,6 @@ padding: 1rem 0.5rem ;
 .caption-h{
 font-size: large;
 font-weight: bold;
-max-width: 200px;  /* Adjust to fit two lines */
 
 }
 .img-pp {
