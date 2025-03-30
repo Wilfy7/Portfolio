@@ -437,14 +437,11 @@
 }
 
 .button {
-  padding: 1.2rem 0.2rem;
+  padding: 1.2rem 0rem;
   background-color: #0073e6;
   color: #fff;
-  border: none;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  height: 3.5rem;
-  max-width: 100px;
+  border: none;  height: 3.5rem;
+  max-width: 50px;
   width: 10%;
   font-weight: bold;
   text-decoration: none;
