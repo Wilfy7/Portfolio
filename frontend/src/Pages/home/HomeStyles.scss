@@ -83,13 +83,13 @@
 }
 
 
-.what-i-focus-on-section{
-  background-color: #abd018;
+.what-i-focus-on-container{
+  background-color: #eff3f7 ;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* a subtle shadow for depth */ 
   text-align: center;
   padding: 2rem 1.1rem;
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 1rem 3.5rem;
   width: 100%;
   height: 100vh;
 }
@@ -99,7 +99,18 @@
   font-size: xx-large;
   font-weight: bold;
   justify-self: center;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
+}
+
+.my-focus-content{
+  color: #414344;
+  width: 68%;
+  font-size: 1.3rem;
+  letter-spacing: 0.3px;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  justify-items: center;
+  margin: 0 auto;
 }
 .my-expertise {
   display: flex;
