@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import blogPost from "../models/blogPost.model";
 
 
-
 //Create a blog post
 export const createBlogPost = async(req: Request, res: Response ) => {
    try {
