@@ -5,7 +5,12 @@ const WhatIFocusOn = () => {
   return (
     <div className="what-i-focus-on-container">
       <div className="my-focus">
-     <span>What I Focus On</span>
+        <span 
+           style={{
+            fontSize: "3.3rem",
+            marginBottom: "-1.5rem",
+           }}>
+          What I Focus On</span>
      </div>
 
      <div className="my-focus-content">
@@ -19,6 +24,10 @@ const WhatIFocusOn = () => {
         I bring both versatility and impact to the table
         </span>
      </div>
+      <div>
+        <h2 className="my-core-competencies"> 
+          My Core Competencies </h2>
+      </div>
     </div>
   )
 }

@@ -40,7 +40,7 @@
 
 .hero-h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.3;
   margin: 0.5rem 0;
@@ -96,8 +96,9 @@
 
 .my-focus {
   display: flex;
-  font-size: xx-large;
+  font-size: 3rem;
   font-weight: bold;
+  color: #454648;
   justify-self: center;
   padding: 1rem 0rem;
 }
@@ -119,6 +120,18 @@
   font-weight: bold;
   justify-self: center;
   padding: 2rem 0rem;
+}
+
+.my-core-competencies{
+  color: #414344;
+  width: 68%;
+  font-size: 2.3rem;
+  font-weight: 650;
+  letter-spacing: 0.3px;
+  border-radius: 15px;
+  justify-items: center;
+  padding-top: 4rem;
+  margin: 0 auto;
 }
 
 
