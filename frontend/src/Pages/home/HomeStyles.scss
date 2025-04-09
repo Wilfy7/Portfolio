@@ -36,6 +36,7 @@
   color:  #303133;
   line-height: 1.6;
   text-align: center;
+  margin: 0rem 3rem ;
 }
 
 .hero-h1 {
@@ -51,32 +52,40 @@
   color: #0073e6;
 }
 
-.hero-button {
-  padding: 0.35rem 0.4rem;      
-  font-size: 1rem; 
-  border-radius: 8px;           
-  background-color: #0073e6;
-  color: white;
+.hero-button,
+.hero-white-btn {
+  padding: 0.7rem 1.5rem;            /* Unified padding */
+  font-size: 1.1rem;
+  border-radius: 8px;
   font-weight: 600;
   border: none;
   text-decoration: none;
   cursor: pointer;
+  margin: 1.5rem 0.5rem ;
   transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;                       /* Space between emoji and text */
+}
+
+.hero-button {
+  background-color: #0073e6;
+  color: white;
+}
+
+.hero-button:hover {
+  background-color: #005bb5;
 }
 
 .hero-white-btn {
-  padding: 0.75rem 3.7rem; 
-  margin: 1rem;     
-  font-size: 1rem; 
-  border-radius: 8px;           
   background-color: #d5e4ec;
   color: black;
-  font-weight: 600;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
+
+.hero-white-btn:hover {
+  background-color: #c2d7e4;
+}
+
 
 .hero-button-text {
   padding: 0.6rem 0.8rem;

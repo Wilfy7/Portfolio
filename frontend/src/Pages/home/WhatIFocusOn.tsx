@@ -26,7 +26,9 @@ const WhatIFocusOn = () => {
      </div>
       <div>
         <h2 className="my-core-competencies"> 
-          My Core Competencies </h2>
+          My Core Competencies 
+        </h2>
+         <div></div>
       </div>
     </div>
   )
