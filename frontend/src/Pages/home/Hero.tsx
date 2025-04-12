@@ -31,14 +31,13 @@ const Hero = () => {
 
            <div className="flex gap-4 bg-gray-100 p-6">
             <a  
-              href="https://calendly.com/wilfy7am/book-a-meeting-with-wilfred" >  
+              href="https://calendly.com/wilfy7am/book-a-meeting-with-wilfred">  
               <button 
                 className="hero-button">
                 <span role="img" aria-label="calendar">📅</span>
                  Set Meeting
             </button>
            </a>
-           
             <button 
               className="hero-white-btn">
                <span role="img" aria-label="laptop">💻</span>

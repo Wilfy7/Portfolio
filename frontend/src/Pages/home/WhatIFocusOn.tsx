@@ -4,6 +4,7 @@ import "./HomeStyles.scss"
 
 const WhatIFocusOn = () => {
   return (
+    <section>
     <div className="what-i-focus-on-container">
       <div className="my-focus">
         <span 
@@ -71,8 +72,107 @@ const WhatIFocusOn = () => {
               <p className="competence-p"> AWS-certified with expertise, Docker, CI/CD Pipelines. </p>
           </div>
          </section>
+
+       
       </div>
     </div>
+ 
+
+    <section className="container py-5">
+  <div className="text-center mb-5">
+ 
+    <h2 
+     className="display-5 fw-bold fs-medium">
+       <img 
+          src="images/deal.svg" 
+          alt="Icon" 
+          className=" img-fluid" 
+          style={{width: '40px', height: '40px', margin: "2px"}}
+        />What I Deliver</h2>
+  </div>
+  
+  <div className="row g-4">
+    {/* Service Items */}
+    <div className="col-12 col-md-6 col-lg-3">
+      <div className="d-flex align-items-start gap-3">
+        <img 
+          src="images/puzzle.svg" 
+          alt="Icon" 
+          className="deliver-icons img-fluid" 
+          style={{width: '40px', height: '40px'}}
+        />
+        <div>
+          <h6 className="fw-bold mb-0">Custom Web Applications</h6>
+          <p className="text-muted mb-0 small">
+            Tailored solutions using modern web technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-12 col-md-6 col-lg-3">
+      <div className="d-flex align-items-start gap-3">
+        <img 
+          src="images/puzzle.svg" 
+          alt="Icon" 
+          className="deliver-icons img-fluid" 
+          style={{width: '40px', height: '40px'}}
+        />
+        <div>
+          <h6 className="fw-bold mb-0">Cloud Infrastructure & DevOps</h6>
+          <p className="text-muted mb-0 small">
+            Helping businesses scale securely with AWS & containerized solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-12 col-md-6 col-lg-3">
+      <div className="d-flex align-items-start gap-3">
+        <img 
+          src="images/puzzle.svg" 
+          alt="Icon" 
+          className="deliver-icons img-fluid" 
+          style={{width: '40px', height: '40px'}}
+        />
+        <div>
+          <h6 className="fw-bold mb-0">Workflow Automation & API Development</h6>
+          <p className="text-muted mb-0 small">
+            Automating business processes and integrating tools.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-12 col-md-6 col-lg-3">
+      <div className="d-flex align-items-start gap-3">
+        <img 
+          src="images/puzzle.svg" 
+          alt="Icon" 
+          className="deliver-icons img-fluid" 
+          style={{width: '40px', height: '40px'}}
+        />
+        <div>
+          <h6 className="fw-bold mb-0">Technical Consulting & Mentorship</h6>
+          <p className="text-muted mb-0 small">
+            Advising on software architecture, cloud optimization, and development strategies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Buttons */}
+  <div className="text-center mt-5 gap-2 d-flex justify-content-center">
+    <button className=" myWork-btn btn-outline-primary px-4 py-2">
+      My Works
+    </button>
+    <button  className="hireMe-btn px-4 py-2">
+      Hire Me
+    </button>
+  </div>
+</section>
+  </section>
     
   )
 }
