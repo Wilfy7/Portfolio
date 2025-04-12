@@ -82,7 +82,7 @@ const WhatIFocusOn = () => {
   <div className="text-center mb-5">
  
     <h2 
-     className="display-5 fw-bold fs-medium">
+     className="display-5 fw-bold d-flex align-items-center justify-content-center gap-3">
        <img 
           src="images/deal.svg" 
           alt="Icon" 
