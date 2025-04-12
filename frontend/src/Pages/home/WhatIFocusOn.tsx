@@ -78,10 +78,10 @@ const WhatIFocusOn = () => {
     </div>
  
 
-    <section className="container py-5">
-  <div className="text-center mb-5">
+ <section className="container py-5">
+    <div className="text-center mb-5">
  
-    <h2 
+     <h2 
      className="display-5 fw-bold d-flex align-items-center justify-content-center gap-3">
        <img 
           src="images/deal.svg" 
@@ -89,9 +89,9 @@ const WhatIFocusOn = () => {
           className=" img-fluid" 
           style={{width: '40px', height: '40px', margin: "2px"}}
         />What I Deliver</h2>
-  </div>
+    </div>
   
-  <div className="row g-4">
+   <div className="row g-4">
     {/* Service Items */}
     <div className="col-12 col-md-6 col-lg-3">
       <div className="d-flex align-items-start gap-3">
@@ -159,11 +159,11 @@ const WhatIFocusOn = () => {
           </p>
         </div>
       </div>
-    </div>
-  </div>
+     </div>
+   </div>
 
-  {/* Buttons */}
-  <div className="text-center mt-5 gap-2 d-flex justify-content-center">
+    {/* Buttons */}
+   <div className="text-center mt-5 gap-2 d-flex justify-content-center">
     <button className=" myWork-btn btn-outline-primary px-4 py-2">
       My Works
     </button>
