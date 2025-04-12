@@ -143,6 +143,45 @@
   margin: 0 auto;
 }
 
+.competence-grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.competence-items{
+  background: #f8f9fb;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.icon-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.competencies-icons{
+  width: 45px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.competence-h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #313841;
+}
+
+.competence-p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
 
 
 
@@ -179,7 +218,7 @@
   
   .hero-card-content{
     background-color: #eff3f7;
-    width: 98%;
+    width: 99%;
     border-radius: 15px;
     padding: 1rem 1rem;
     margin-bottom: 2rem;
@@ -198,6 +237,12 @@
     padding: 0.5rem 2rem;
     width: 100%;
     text-align: center;
+  }
+
+
+
+  .competencies-grid {
+    grid-template-columns: 1fr;
   }
   
   .discovery-section{

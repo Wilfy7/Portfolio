@@ -21,7 +21,12 @@ const Hero = () => {
           <span>Impacting Softwares <br /> With Reliable Solution</span>
          </h1>
           <p className="hero-p hero-par">
-            I am a Software Engineer with a passion for building impactful software solutions. I have experience in developing web applications, mobile applications, and cloud based solutions.  I am always looking for new challenges and opportunities to learn and grow as a developer.
+            I am a Software Engineer who has a passion for 
+            building impactful software solutions. 
+            I have experience developing web applications, 
+            mobile applications, and cloud based solutions.  
+            I am always looking for new challenges and 
+            opportunities to learn and grow as a developer.
           </p>
 
            <div className="flex gap-4 bg-gray-100 p-6">

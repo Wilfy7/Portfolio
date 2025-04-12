@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react"
 import "./HomeStyles.scss"
+
 
 const WhatIFocusOn = () => {
   return (
@@ -26,12 +27,54 @@ const WhatIFocusOn = () => {
      </div>
       <div>
         <h2 className="my-core-competencies"> 
-          My Core Competencies 
+        💼 My Core Competencies 
         </h2>
-         <div></div>
+
+         <section className="competence-grid-container">
+          <div className="competence-items">
+            <div className="icon-heading">
+               <img src="images/software.svg" alt="Icon" className="competencies-icons" />
+               <h3 className="competence-h3">
+                 Software Development
+               </h3>
+            </div>
+              <p className="competence-p">Experienced in both functional and OOP programming with JavaScript, TypeScript, Python </p>
+          </div>
+            
+            <div className="competence-items">
+            <div className="icon-heading">
+               <img src="images/frontend.svg" alt="Icon" className="competencies-icons" />
+               <h3 className="competence-h3">
+                Frontend Development
+              </h3>
+            </div>
+              <p className="competence-p">Specializing in React, and UI/UX best practices. </p>
+            </div>
+
+            <div className="competence-items">
+            <div className="icon-heading">
+              <img src="images/backend.svg" alt="Icon" className="competencies-icons" />
+              <h3 className="competence-h3">
+                Backend & API Development
+              </h3>
+              </div>
+
+              <p className="competence-p"> Strong knowledge of Node.js, GraphQL, and REST APIs.</p>
+            </div>
+            <div className="competence-items">
+            <div className="icon-heading">
+            <img src="images/cloud.svg" alt="Icon" className="competencies-icons" />
+              <h3 className="competence-h3">
+               Cloud and DevOps
+              </h3>
+              </div>
+              <p className="competence-p"> AWS-certified with expertise, Docker, CI/CD Pipelines. </p>
+          </div>
+         </section>
       </div>
     </div>
+    
   )
 }
 
-export default WhatIFocusOn
+export default WhatIFocusOn;
