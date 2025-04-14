@@ -22,7 +22,7 @@ const Discovery = () => {
        </div>
 
        <div className="solutions-item">
-          <img className="solutions-image-card" src="images/dashboard.jpg" alt="" />
+          <img className="solutions-image-card" src="images/pexels.jpg" alt="pexels" />
          <div className="solutions-item-content">
           <h3>Yiwonsa</h3>
           <p>A place to find multiple restaurant to order food that would be delivered at customers doorstep</p>
