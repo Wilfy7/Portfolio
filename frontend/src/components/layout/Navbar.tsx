@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 const Navbar = () => {
   return (
   <nav className="globalstyles navbar navbar-expand-lg fixed-top">
-     <div className="container-fluid">
+     <div className=" nav-brand">
         <NavLink 
          style={{
             fontFamily: "sans-serif",
@@ -15,7 +15,9 @@ const Navbar = () => {
             textDecoration: "none"
           }}
         to="/"> 
+          <img className="logo" src="./images/log.png" alt="log" />
           CodeAlkemy
+      
         </NavLink>
 
         <div style={{paddingLeft:"25rem"}} className="collapse navbar-collapse" id="navbarSupportedContent">
