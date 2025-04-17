@@ -30,7 +30,7 @@ const Discovery = () => {
        </div>
 
        <div className="solutions-item">
-          <img className="solutions-image-card" src="images/dashboard.jpg" alt="" />
+          <img className="solutions-image-card" src="images/wmail.webp" alt="" />
          <div className="solutions-item-content">
           <h3>Cold Outreach Email Marketing Tool</h3>
         <p>Automates cold email campaigns with personalized outreach and engagement tracking</p>

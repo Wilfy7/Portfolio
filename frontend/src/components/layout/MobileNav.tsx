@@ -3,19 +3,16 @@ import { NavLink } from "react-router-dom"
 
 const MobileNav = () => {
   return (
-    <nav className="globalstyles navbar navbar-expand-lg fixed-top">
-    <div className="container-fluid">
-       <NavLink 
-        style={{
-           fontFamily: "sans-serif",
-           fontWeight: 800,
-           paddingLeft: "0.5rem",
-           color: "black",
-           textDecoration: "none"
-         }}
-       to="/"> 
-         CodeAlkemy
-       </NavLink>
+    <nav className="navbar">
+        <div className="container-fluid">
+          <NavLink to="/" className="navbar-brand">
+            <img
+              src="/images/log.png"
+              alt="logo"
+              className="logo"
+            />
+            <span className="brand-name">CodeAlkemy</span>
+          </NavLink>
 
        <div style={{paddingLeft:"25rem"}} className="collapse navbar-collapse" id="navbarSupportedContent">
        <ul className="navbar-nav me-auto mb-2 mb-lg-0">

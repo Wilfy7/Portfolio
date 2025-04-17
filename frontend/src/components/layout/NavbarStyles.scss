@@ -1,80 +1,116 @@
+/* Desktop & Mobile Toggle */
+.navbar-desktop {
+  display: flex;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+/* Base navbar layout */
 .navbar {
-    position: sticky;
-    background-color: #fdfdfd;
-    border-bottom: 1px solid #f0f0f5;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    top: 0;
-    left:0;
-    height: 4.5rem; 
-    width: 100%; 
-    z-index: 1000; 
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid #f1f1f1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-.pagestext {
-    color: rgb(244, 239, 239)
-    
-} 
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
 
-.container-fluid {
-    width: 100%;
-    max-width: 100%; /* Ensure no restrictions */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .let-talk {
-    transform: translate(-15%);
-    font-size: 16px; 
-    text-align: center;
-    
+.navbar-left .brand-name {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.logo {
+  width: 28px;
+  height: 28px;
+  margin-right: 2px;
+  margin-left: 45px;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center a {
+  text-decoration: none;
+  color: #2f3542;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-center a:hover {
+  color: #007bff;
+}
+
+.arrow {
+  font-size: 0.8rem;
+}
+
+/* Right side button */
+.navbar-right .talk-btn {
+  background-color: #3366ff;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  margin-right: 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.talk-btn:hover {
+  background-color: #1a53ff;
+}
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .navbar-desktop {
+    display: none;
   }
 
-  .navbar-brand {
+  .navbar-mobile {
     display: flex;
-    align-items: center;
   }
-  
-  .logo {
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
-  }
-  
 
-@media (min-width: 1024px) {
-  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-center {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .navbar-right {
+    margin-top: 1rem;
+  }
 }
-
-  @media (max-width: 768px) {
-    .navbar {
-      position: sticky;
-      background-color: #fdfdfd;
-      border-bottom: 1px solid #f0f0f5;
-      height: 4rem; /* Adjust height for mobile */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      top: 0;
-      left:0;
-      width: 100%; 
-      z-index: 1000; 
-    }
-  
-    .pagestext {
-      color: rgb(244, 239, 239); /* Keep same color */
-    }
-  
-    .container-fluid {
-      max-width: 100%; /* Ensure full width */
-      width: 100%;
-      padding: 0 0.5rem; /* Add padding for better spacing */
-      margin: 0;
-      padding: 0;
-    }
-  
-    .let-talk {
-      transform: translate(-80%);
-      font-size: 16px; /* Adjust font size */
-      text-align: center; /* Center-align text for smaller screens */
-    }
-  }
-  
-  

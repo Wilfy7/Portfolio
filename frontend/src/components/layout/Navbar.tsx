@@ -1,50 +1,45 @@
 import React from "react";
-import "./NavbarStyles.scss"
+import "./NavbarStyles.scss"; 
 import { NavLink } from "react-router-dom"
+
+
+
+
 
 const Navbar = () => {
   return (
-  <nav className="globalstyles navbar navbar-expand-lg fixed-top">
-     <div className=" nav-brand">
-        <NavLink 
-         style={{
-            fontFamily: "sans-serif",
-            fontWeight: 800,
-            paddingLeft: "0.5rem",
-            color: "black",
-            textDecoration: "none"
-          }}
-        to="/"> 
-          <img className="logo" src="./images/log.png" alt="log" />
-          CodeAlkemy
-      
-        </NavLink>
+    <nav className="navbar">
+      {/* Left section */}
+      <NavLink to="/"  className="brand-name" style={{ textDecoration: "none", color: "black" }}>
+        <img
+          src="/images/log.png" // Update if your image path differs
+          alt="logo"
+          className="logo"
+        />
+        <span className="brand-name">CodeAlkemy</span>
+      </NavLink>
 
-        <div style={{paddingLeft:"25rem"}} className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-           <NavLink className="nav-link pagestext" to="/"></NavLink>
-         </li>
-         <li className="nav-item">
-           <NavLink  className="nav-link pagestext" to="/projects">Projects</NavLink>
-         </li>
-         <li className="nav-item">
-            <NavLink className="nav-link pagestext" to="/blogs">Blogs</NavLink>
-         </li>
-         <li className="nav-item">
-          <NavLink className="nav-link pagestext" to="/aboutme">About Me</NavLink>
-         </li>
-         </ul>
-          <div className="let-talk">
-            <button className="ready-button">
-              Let's Talk
-            </button>
-          </div>
-        </div>
-      
-     </div>
-  </nav>
-  )
-}
+      {/* Center nav links */}
+      <ul className="navbar-center">
+        <li><NavLink to="/aboutme">About Me</NavLink></li>
+        <li><NavLink to="/projects">Projects</NavLink></li>
+        <li><NavLink to="/blogs">Blogs</NavLink></li>
+        <li>
+          <NavLink to="/resources">
+            Resources <span className="arrow">▾</span>
+          </NavLink>
+        </li>
+      </ul>
+
+      {/* Right CTA button */}
+      <div className="navbar-right">
+        <button className="talk-btn">Let's Talk!</button>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
+
+    
+
