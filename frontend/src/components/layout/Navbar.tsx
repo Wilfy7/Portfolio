@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar fixed-top">
       {/* Left section */}
       <NavLink to="/"  className="brand-name" style={{ textDecoration: "none", color: "black" }}>
         <img
