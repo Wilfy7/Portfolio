@@ -21,9 +21,9 @@ const Navbar = () => {
 
       {/* Center nav links */}
       <ul className="navbar-center">
-        <li><NavLink to="/aboutme">About Me</NavLink></li>
         <li><NavLink to="/projects">Projects</NavLink></li>
         <li><NavLink to="/blogs">Blogs</NavLink></li>
+        <li><NavLink to="/aboutme">About Me</NavLink></li>
         <li>
           <NavLink to="/resources">
             Resources <span className="arrow">▾</span>
